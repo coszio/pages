@@ -25,13 +25,11 @@ const Posts = () => {
         "Content-Type": "application/json",
       },
     });
-    console.log(response);
   }
 
   function handleUpvote(id) {
     const newPosts = posts.map((post) => {
       if (post.id === id) {
-        console.log(post);
         post.votes += 1;
         updatePost(post);
       }
@@ -44,7 +42,6 @@ const Posts = () => {
     
     const newPosts = posts.map((post) => {
       if (post.id === id) {
-        console.log(post);
         post.votes -= 1;
         updatePost(post);
       }

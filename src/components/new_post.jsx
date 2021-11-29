@@ -98,12 +98,9 @@ export default function NewPost() {
               <Modal.Footer>
                 <Link to='/'>
                   <Button variant='secondary' onClick={handleClose}>
-                    Close
+                    Go to Posts
                   </Button>
                 </Link>
-                {/* <Button variant='primary' onClick={handleClose}>
-                  Save Changes
-                </Button> */}
               </Modal.Footer>
             </Modal>
           </div>
